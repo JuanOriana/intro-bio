@@ -1,0 +1,369 @@
+LOCUS       NM_001298               3547 bp    mRNA    linear   PRI 09-JUL-2023
+DEFINITION  Homo sapiens cyclic nucleotide gated channel subunit alpha 3
+            (CNGA3), transcript variant 1, mRNA.
+ACCESSION   NM_001298
+VERSION     NM_001298.3
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 3547)
+  AUTHORS   Amaral RAS, Motta FL, Zin OA, da Palma MM, Rodrigues GD and Sallum
+            JMF.
+  TITLE     Molecular and Clinical Characterization of CNGA3 and CNGB3 Genes in
+            Brazilian Patients Affected with Achromatopsia
+  JOURNAL   Genes (Basel) 14 (6), 1296 (2023)
+   PUBMED   37372476
+  REMARK    GeneRIF: Molecular and Clinical Characterization of CNGA3 and CNGB3
+            Genes in Brazilian Patients Affected with Achromatopsia.
+            Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 3547)
+  AUTHORS   Reuter P, Walter M, Kohl S and Weisschuh N.
+  TITLE     Systematic analysis of CNGA3 splice variants identifies different
+            mechanisms of aberrant splicing
+  JOURNAL   Sci Rep 13 (1), 2896 (2023)
+   PUBMED   36801918
+  REMARK    GeneRIF: Systematic analysis of CNGA3 splice variants identifies
+            different mechanisms of aberrant splicing.
+            Publication Status: Online-Only
+REFERENCE   3  (bases 1 to 3547)
+  AUTHORS   Solaki M, Baumann B, Reuter P, Andreasson S, Audo I, Ayuso C,
+            Balousha G, Benedicenti F, Birch D, Bitoun P, Blain D, Bocquet B,
+            Branham K, Catala-Mora J, De Baere E, Dollfus H, Falana M, Giorda
+            R, Golovleva I, Gottlob I, Heckenlively JR, Jacobson SG, Jones K,
+            Jagle H, Janecke AR, Kellner U, Liskova P, Lorenz B,
+            Martorell-Sampol L, Messias A, Meunier I, Belga Ottoni Porto F,
+            Papageorgiou E, Plomp AS, de Ravel TJL, Reiff CM, Renner AB,
+            Rosenberg T, Rudolph G, Salati R, Sener EC, Sieving PA, Stanzial F,
+            Traboulsi EI, Tsang SH, Varsanyi B, Weleber RG, Zobor D, Stingl K,
+            Wissinger B and Kohl S.
+  TITLE     Comprehensive variant spectrum of the CNGA3 gene in patients
+            affected by achromatopsia
+  JOURNAL   Hum Mutat 43 (7), 832-858 (2022)
+   PUBMED   35332618
+  REMARK    GeneRIF: Comprehensive variant spectrum of the CNGA3 gene in
+            patients affected by achromatopsia.
+            Review article
+REFERENCE   4  (bases 1 to 3547)
+  AUTHORS   Yousaf S, Tariq N, Sajid Z, Sheikh SA, Kausar T, Waryah YM, Shaikh
+            RS, Waryah AM, Sethna S, Riazuddin S and Ahmed ZM.
+  TITLE     Delineating the Molecular and Phenotypic Spectrum of the
+            CNGA3-Related Cone Photoreceptor Disorder in Pakistani Families
+  JOURNAL   Genes (Basel) 13 (4), 617 (2022)
+   PUBMED   35456423
+  REMARK    GeneRIF: Delineating the Molecular and Phenotypic Spectrum of the
+            CNGA3-Related Cone Photoreceptor Disorder in Pakistani Families.
+            Publication Status: Online-Only
+REFERENCE   5  (bases 1 to 3547)
+  AUTHORS   Zheng X, Li H, Hu Z, Su D and Yang J.
+  TITLE     Structural and functional characterization of an
+            achromatopsia-associated mutation in a phototransduction channel
+  JOURNAL   Commun Biol 5 (1), 190 (2022)
+   PUBMED   35233102
+  REMARK    GeneRIF: Structural and functional characterization of an
+            achromatopsia-associated mutation in a phototransduction channel.
+            Publication Status: Online-Only
+REFERENCE   6  (bases 1 to 3547)
+  AUTHORS   Kohl S, Marx T, Giddings I, Jagle H, Jacobson SG, Apfelstedt-Sylla
+            E, Zrenner E, Sharpe LT and Wissinger B.
+  TITLE     Total colourblindness is caused by mutations in the gene encoding
+            the alpha-subunit of the cone photoreceptor cGMP-gated cation
+            channel
+  JOURNAL   Nat Genet 19 (3), 257-259 (1998)
+   PUBMED   9662398
+REFERENCE   7  (bases 1 to 3547)
+  AUTHORS   Wissinger B, Muller F, Weyand I, Schuffenhauer S, Thanos S, Kaupp
+            UB and Zrenner E.
+  TITLE     Cloning, chromosomal localization and functional expression of the
+            gene encoding the alpha-subunit of the cGMP-gated channel in human
+            cone photoreceptors
+  JOURNAL   Eur J Neurosci 9 (12), 2512-2521 (1997)
+   PUBMED   9517456
+REFERENCE   8  (bases 1 to 3547)
+  AUTHORS   Arbour NC, Zlotogora J, Knowlton RG, Merin S, Rosenmann A, Kanis
+            AB, Rokhlina T, Stone EM and Sheffield VC.
+  TITLE     Homozygosity mapping of achromatopsia to chromosome 2 using DNA
+            pooling
+  JOURNAL   Hum Mol Genet 6 (5), 689-694 (1997)
+   PUBMED   9158143
+REFERENCE   9  (bases 1 to 3547)
+  AUTHORS   Distler M, Biel M, Flockerzi V and Hofmann F.
+  TITLE     Expression of cyclic nucleotide-gated cation channels in
+            non-sensory tissues and cells
+  JOURNAL   Neuropharmacology 33 (11), 1275-1282 (1994)
+   PUBMED   7532814
+REFERENCE   10 (bases 1 to 3547)
+  AUTHORS   Kohl,S., Jagle,H., Wissinger,B. and Zobor,D.
+  TITLE     Achromatopsia
+  JOURNAL   (in) Adam MP, Mirzaa GM, Pagon RA, Wallace SE, Bean LJH, Gripp KW
+            and Amemiya A (Eds.);
+            GENEREVIEWS(R);
+            (1993)
+   PUBMED   20301591
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AC092675.2.
+            This sequence is a reference standard in the RefSeqGene project.
+            
+            On Aug 1, 2019 this sequence version replaced NM_001298.2.
+            
+            Summary: This gene encodes a member of the cyclic nucleotide-gated
+            cation channel protein family which is required for normal vision
+            and olfactory signal transduction. Mutations in this gene are
+            associated with achromatopsia (rod monochromacy) and color
+            blindness. Two alternatively spliced transcripts encoding different
+            isoforms have been described. [provided by RefSeq, Jul 2008].
+            
+            Transcript Variant: This variant (1) represents the longer
+            transcript and encodes the longer protein (isoform 1).
+            
+            Sequence Note: The RefSeq transcript and protein were derived from
+            genomic sequence to make the sequence consistent with the reference
+            genome assembly. The genomic coordinates used for the transcript
+            record were based on alignments.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: SRR14372080.1879306.1,
+                                           SRR14372079.2266981.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA2147975, SAMN03465404
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match     :: ENST00000272602.7/ ENSP00000272602.2
+            RefSeq Select criteria :: based on manual assertion, conservation
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-79                AC092675.2         84780-84858
+            80-217              AC092675.2         108263-108400
+            218-331             AC092675.2         116011-116124
+            332-511             AC092675.2         118499-118678
+            512-565             AC092675.2         121712-121765
+            566-682             AC092675.2         127982-128098
+            683-789             AC092675.2         130188-130294
+            790-3547            AC092675.2         134168-136925
+FEATURES             Location/Qualifiers
+     source          1..3547
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="2"
+                     /map="2q11.2"
+     gene            1..3547
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="cyclic nucleotide gated channel subunit alpha 3"
+                     /db_xref="GeneID:1261"
+                     /db_xref="HGNC:HGNC:2150"
+                     /db_xref="MIM:600053"
+     exon            1..79
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            80..217
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    102..104
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="upstream in-frame stop codon"
+     CDS             117..2201
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="isoform 1 is encoded by transcript variant 1;
+                     cyclic nucleotide-gated cation channel alpha-3; cone
+                     photoreceptor cGMP-gated channel alpha subunit; CNG-3; CNG
+                     channel alpha-3; cone photoreceptor cGMP-gated channel
+                     subunit alpha; cyclic nucleotide gated channel alpha 3"
+                     /codon_start=1
+                     /product="cyclic nucleotide-gated cation channel alpha-3
+                     isoform 1"
+                     /protein_id="NP_001289.1"
+                     /db_xref="CCDS:CCDS2034.1"
+                     /db_xref="GeneID:1261"
+                     /db_xref="HGNC:HGNC:2150"
+                     /db_xref="MIM:600053"
+                     /translation="MAKINTQYSHPSRTHLKVKTSDRDLNRAENGLSRAHSSSEETSS
+                     VLQPGIAMETRGLADSGQGSFTGQGIARLSRLIFLLRRWAARHVHHQDQGPDSFPDRF
+                     RGAELKEVSSQESNAQANVGSQEPADRGRSAWPLAKCNTNTSNNTEEEKKTKKKDAIV
+                     VDPSSNLYYRWLTAIALPVFYNWYLLICRACFDELQSEYLMLWLVLDYSADVLYVLDV
+                     LVRARTGFLEQGLMVSDTNRLWQHYKTTTQFKLDVLSLVPTDLAYLKVGTNYPEVRFN
+                     RLLKFSRLFEFFDRTETRTNYPNMFRIGNLVLYILIIIHWNACIYFAISKFIGFGTDS
+                     WVYPNISIPEHGRLSRKYIYSLYWSTLTLTTIGETPPPVKDEEYLFVVVDFLVGVLIF
+                     ATIVGNVGSMISNMNASRAEFQAKIDSIKQYMQFRKVTKDLETRVIRWFDYLWANKKT
+                     VDEKEVLKSLPDKLKAEIAINVHLDTLKKVRIFQDCEAGLLVELVLKLRPTVFSPGDY
+                     ICKKGDIGKEMYIINEGKLAVVADDGVTQFVVLSDGSYFGEISILNIKGSKSGNRRTA
+                     NIRSIGYSDLFCLSKDDLMEALTEYPEAKKALEEKGRQILMKDNLIDEELARAGADPK
+                     DLEEKVEQLGSSLDTLQTRFARLLAEYNATQMKMKQRLSQLESQVKGGGDKPLADGEV
+                     PGDATKTEDKQQ"
+     misc_feature    117..188
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    441..572
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    615..677
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     transmembrane region"
+     misc_feature    714..776
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     transmembrane region"
+     misc_feature    873..935
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     transmembrane region"
+     misc_feature    1023..1085
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     transmembrane region"
+     misc_feature    1251..1313
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     transmembrane region"
+     misc_feature    1560..1622
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     transmembrane region"
+     misc_feature    2100..2198
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q16281.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     exon            218..331
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            332..511
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            512..565
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            566..682
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            683..789
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            790..3547
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      3524..3529
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="hexamer: AATAAA"
+     polyA_site      3547
+                     /gene="CNGA3"
+                     /gene_synonym="ACHM2; CCNC1; CCNCa; CCNCalpha; CNCG3;
+                     CNG3"
+                     /note="major polyA site"
+ORIGIN      
+        1 ggaactgcgc ctaggaggcc gagggaggag gcgctccgca gaccctggcg cgccgcggag
+       61 aagctcaaac tttggcaggc aatcatctgg ggggctaaat gtgacaaacc gagaagatgg
+      121 ccaagatcaa cacccaatac tcccacccct ccaggaccca cctcaaggta aagacctcag
+      181 accgagatct caatcgcgct gaaaatggcc tcagcagagc ccactcgtca agtgaggaga
+      241 catcgtcagt gctgcagccg gggatcgcca tggagaccag aggactggct gactccgggc
+      301 agggctcctt caccggccag gggatcgcca ggctgtcgcg cctcatcttc ttgctgcgca
+      361 ggtgggctgc caggcatgtg caccaccagg accagggacc ggactctttt cctgatcgtt
+      421 tccgtggagc cgagcttaag gaggtgtcca gccaagaaag caatgcccag gcaaatgtgg
+      481 gcagccagga gccagcagac agagggagaa gcgcctggcc cctggccaaa tgcaacacta
+      541 acaccagcaa caacacggag gaggagaaga agacgaaaaa gaaggatgcg atcgtggtgg
+      601 acccgtccag caacctgtac taccgctggc tgaccgccat cgccctgcct gtcttctata
+      661 actggtatct gcttatttgc agggcctgtt tcgatgagct gcagtccgag tacctgatgc
+      721 tgtggctggt cctggactac tcggcagatg tcctgtatgt cttggatgtg cttgtacgag
+      781 ctcggacagg ttttctcgag caaggcttaa tggtcagtga taccaacagg ctgtggcagc
+      841 attacaagac gaccacgcag ttcaagctgg atgtgttgtc cctggtcccc accgacctgg
+      901 cttacttaaa ggtgggcaca aactacccag aagtgaggtt caaccgccta ctgaagtttt
+      961 cccggctctt tgaattcttt gaccgcacag agacaaggac caactacccc aatatgttca
+     1021 ggattgggaa cttggtcttg tacattctca tcatcatcca ctggaatgcc tgcatctact
+     1081 ttgccatttc caagttcatt ggttttggga cagactcctg ggtctaccca aacatctcaa
+     1141 tcccagagca tgggcgcctc tccaggaagt acatttacag tctctactgg tccaccttga
+     1201 cccttaccac cattggtgag accccacccc ccgtgaaaga tgaggagtat ctctttgtgg
+     1261 tcgtagactt cttggtgggt gttctgattt ttgccaccat tgtgggcaat gtgggctcca
+     1321 tgatctcgaa tatgaatgcc tcacgggcag agttccaggc caagattgat tccatcaagc
+     1381 agtacatgca gttccgcaag gtcaccaagg acttggagac gcgggttatc cggtggtttg
+     1441 actacctgtg ggccaacaag aagacggtgg atgagaagga ggtgctcaag agcctcccag
+     1501 acaagctgaa ggctgagatc gccatcaacg tgcacctgga cacgctgaag aaggttcgca
+     1561 tcttccagga ctgtgaggca gggctgctgg tggagctggt gctgaagctg cgacccactg
+     1621 tgttcagccc tggggattat atctgcaaga agggagatat tgggaaggag atgtacatca
+     1681 tcaacgaggg caagctggcc gtggtggctg atgatggggt cacccagttc gtggtcctca
+     1741 gcgatggcag ctacttcggg gagatcagca ttctgaacat caaggggagc aagtcgggga
+     1801 accgcaggac ggccaacatc cgcagcattg gctactcaga cctgttctgc ctctcaaagg
+     1861 acgatctcat ggaggccctc accgagtacc ccgaagccaa gaaggccctg gaggagaaag
+     1921 gacggcagat cctgatgaaa gacaacctga tcgatgagga gctggccagg gcgggcgcgg
+     1981 accccaagga ccttgaggag aaagtggagc agctggggtc ctccctggac accctgcaga
+     2041 ccaggtttgc acgcctcctg gctgagtaca acgccaccca gatgaagatg aagcagcgtc
+     2101 tcagccaact ggaaagccag gtgaagggtg gtggggacaa gcccctggct gatggggaag
+     2161 ttcccgggga tgctacaaaa acagaggaca aacaacagtg aaaatgcagc atctgtctcc
+     2221 tgcttcacag ggtcgactgt cagggtgacc gtatgtggcc gcagctgtgt ggcatggaac
+     2281 ttggtcaggg ttgaattcca gctctactca ccctttgaaa gctgtgtgac tgcctgagag
+     2341 aacctgtttc ttcacctaaa aaatgggact ttttgtctca gtcccagtga agtgccaggt
+     2401 ttgattgtga agtccgcatg aaacactgca ccaggcaggg ctttgcaaag tgcaaggtat
+     2461 ccccagtcca agtatatgaa aacgtgcaca caggactctc attacttttt tatggaatct
+     2521 gcaaggtgtt tttaggcttt ttaatctgat tttcttataa atgaaagatt atttagtcac
+     2581 ctttctcctg tccaacttca ccaccacctg ataatgggta tataacagga agctgaaggt
+     2641 acaacatagt gactaaaatt cagacttaca caagacagtt tgaggcatat ttcttaatct
+     2701 ggtatcacct cgtgtgttct ttggggccct agaaaccctg gcttttggga gtgctatggc
+     2761 aagtagaagt tctgccggat ggaaagaggc tgccccattt gaggtcattt aaaatctgtg
+     2821 aagcaaatcc agactccttg ccgttcagcc actgtgaaac cagaatctgc ttcacagaaa
+     2881 aaagcatctc agttaggaga agagacatcc cctccttctc acttgccaaa gagattcaaa
+     2941 gacagcccct atcctccatt cttgagtcag ggccctaggt gacctattct aactcaagga
+     3001 ggagagctat gtacagggag agcattttag attgaaggtt ggaatggtgt actaaaccaa
+     3061 aaaagctgac aactgagagt tttagaagat tagaccatta ggaacgtatc tttgcaaact
+     3121 gcccattcac ccatgaagag gaagcctcaa gatcccttgg aattgcatcc caaggcaaag
+     3181 cttttggctc accgaaagct cacagattgc agaaattagc ttttttaaaa aacaaacccc
+     3241 agtaaatata atttcattaa cattttataa cagatttata tttttgagtt ccgtgattgc
+     3301 aaattatgac ctcaaattcc atccttcact tatgtaacat gttgcaaatt acccaaagat
+     3361 gagtctttct tctttctttc ctttttcctt tcttcttcct ttcctttttt ctttcttctt
+     3421 ccttctttct tcctttttct ctctcctctt ttcctcctca aaatgtatat attttaaaag
+     3481 ccttaactgt tagttatgcc tgcattcata tttgcacagg aaaaataaag acctggattt
+     3541 aaaaata
+//
+
