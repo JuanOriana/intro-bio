@@ -1,19 +1,21 @@
 from Bio import SeqIO 
 import sys
 
-if len(sys.argv) != 3:
+if len(sys.argv) != 2:
     print("Wrong arguments amount")
     exit(1)
 
 gbk_filename = sys.argv[1]
-faa_filename = sys.argv[2]
 
 line_length = 70
 
 
-if (gbk_filename.split(".")[1] != "gbk" and gbk_filename.split(".")[1] != "gb") or faa_filename.split(".")[1] != "fasta":
+if (gbk_filename.split(".")[1] != "gbk" and gbk_filename.split(".")[1] != "gb"):
     print("Wrong format for input or output file")
     exit(1)
+
+faa_filename = "./FASTA/" + gbk_filename.split(".")[0].split("/")[-1] + ".fasta"
+print(faa_filename)
 
 input_handle = open(gbk_filename, "r")
 output_handle = open(faa_filename, "w")
