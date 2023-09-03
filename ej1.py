@@ -9,20 +9,18 @@ def read_genbank_file(filename):
         records = SeqIO.parse(file, "genbank")
         return list(records)
 
-
-def translate_mrna_to_aminoacids(mrna_sequence):
-    start_codon = "ATG"  # deberia ser AUG pero es ATG porque tenemos adn no arn
+def translate_mrna_to_aminoacids(mrna_sequence, min_seq_len = 90, start_codon="ATG"):
     translations = []
 
-    while start_codon in mrna_sequence:
-        start_position = mrna_sequence.find(start_codon)
-        sequence_length = len(mrna_sequence) - start_position
-        new_length = sequence_length - (sequence_length % 3)
-        to_translate = mrna_sequence[start_position:new_length + start_position]
+    for i in range(len(mrna_sequence)-2):
+        if mrna_sequence[i]+mrna_sequence[i+1]+mrna_sequence[i+2] == start_codon:
+            max_seq_length = len(mrna_sequence) - i
+            max_seq_length_rounded = max_seq_length - (max_seq_length % 3)
+            translation = mrna_sequence[i:max_seq_length_rounded+i].translate(to_stop=True)
+            if len(translation) > min_seq_len:   
+                translations.append((len(translation), translation ,i))
 
-        translation = to_translate.translate(to_stop=True)
-        mrna_sequence = mrna_sequence[start_position + len(start_codon):]
-        translations.append(translation)
+    translations.sort(reverse=True)
     return translations
 
 
@@ -32,16 +30,11 @@ def write_fasta_file(output_filename, translation, record_data):
         SeqIO.write(record, file, "fasta")
 
 
-def translate_genbank_to_fasta(input_filename, output_filename):
-    genbank_records = read_genbank_file(input_filename)
-
+def translate_genbank_to_fasta(genbank_records, output_filename):
+    translations = {}
     for record in genbank_records:
-        translations = translate_mrna_to_aminoacids(record.seq)
-        longest_item = max(translations, key=len)
-        write_fasta_file(output_filename, Seq(longest_item), record)
-        print(
-            f"Las secuencias de aminoácidos del {record.name}({record.description}) "
-            f"se han guardado en {output_filename}.")
+        translations[record.id] = translate_mrna_to_aminoacids(record.seq)
+    return translations
 
 
 if __name__ == '__main__':
@@ -60,4 +53,27 @@ if __name__ == '__main__':
     faa_filename = "./FASTA/" + gbk_filename.split(".")[0].split("/")[-1] + ".fasta"
     print(faa_filename)
 
-    translate_genbank_to_fasta(gbk_filename, faa_filename)
+    orfs = []
+
+    try:
+        genbank_records = read_genbank_file(gbk_filename)
+    except Exception:
+        print("Could not open " + gbk_filename)
+
+    translations = translate_genbank_to_fasta(genbank_records, faa_filename)
+
+    for record in genbank_records:
+        print(">>> RECORD " + record.id)
+        print("-----------------")
+        for translation in translations[record.id]:
+            print("sequence: ", translation[1], "length: " , translation[0], " start position: ", translation[2])
+            print("-----------------")
+
+        try:
+            write_fasta_file(faa_filename, translations[record.id][0][1], record)
+        except Exception:
+            print("Could not open " + gbk_filename)
+
+        print(
+            f"Las secuencias de aminoácidos del {record.name} ({record.description}) "
+            f"se han guardado en {faa_filename}.")
