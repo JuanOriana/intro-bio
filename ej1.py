@@ -10,16 +10,17 @@ def read_genbank_file(filename):
         return list(records)
 
 
-def translate_mrna_to_aminoacids(mrna_sequence, min_seq_len=90, start_codon="ATG"):
+def translate_mrna_to_aminoacids(to_trans_mrna_sequence, min_seq_len=90, start_codon="ATG"):
     translations = []
 
-    for i in range(len(mrna_sequence) - 2):
-        if mrna_sequence[i] + mrna_sequence[i + 1] + mrna_sequence[i + 2] == start_codon:
-            max_seq_length = len(mrna_sequence) - i
-            max_seq_length_rounded = max_seq_length - (max_seq_length % 3)
-            translation = mrna_sequence[i:max_seq_length_rounded + i].translate(to_stop=True)
-            if len(translation) > min_seq_len:
-                translations.append((len(translation), translation, i))
+    for mrna_sequence in to_trans_mrna_sequence, to_trans_mrna_sequence.complement():
+        for i in range(len(mrna_sequence) - 2):
+            if mrna_sequence[i] + mrna_sequence[i + 1] + mrna_sequence[i + 2] == start_codon:
+                max_seq_length = len(mrna_sequence) - i
+                max_seq_length_rounded = max_seq_length - (max_seq_length % 3)
+                translation = mrna_sequence[i:max_seq_length_rounded + i].translate(to_stop=True)
+                if len(translation) > min_seq_len:
+                    translations.append((len(translation), translation, i))
 
     translations.sort(reverse=True)
     return translations
@@ -69,6 +70,10 @@ def main():
     translations = translate_genbank_to_fasta(genbank_records)
 
     for record in genbank_records:
+        # TODO: if a .gb file contains many records, make a fasta file for each
+        # faa_filename = "./FASTA/" + record.name + ".fasta"
+        # print(faa_filename)
+
         print(">>> RECORD " + record.id)
         print("-----------------")
         for translation in translations[record.id]:
