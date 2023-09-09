@@ -30,7 +30,7 @@ def write_fasta_file(output_filename, translation, record_data):
         SeqIO.write(record, file, "fasta")
 
 
-def translate_genbank_to_fasta(genbank_records, output_filename):
+def translate_genbank_to_fasta(genbank_records):
     translations = {}
     for record in genbank_records:
         translations[record.id] = translate_mrna_to_aminoacids(record.seq)
@@ -44,23 +44,19 @@ if __name__ == '__main__':
 
     gbk_filename = sys.argv[1]
 
-    line_length = 70
-
     if gbk_filename.split(".")[1] != "gbk" and gbk_filename.split(".")[1] != "gb":
-        print("Wrong format for input or output file")
+        print("Wrong format for input file")
         exit(1)
 
     faa_filename = "./FASTA/" + gbk_filename.split(".")[0].split("/")[-1] + ".fasta"
     print(faa_filename)
-
-    orfs = []
 
     try:
         genbank_records = read_genbank_file(gbk_filename)
     except Exception:
         print("Could not open " + gbk_filename)
 
-    translations = translate_genbank_to_fasta(genbank_records, faa_filename)
+    translations = translate_genbank_to_fasta(genbank_records)
 
     for record in genbank_records:
         print(">>> RECORD " + record.id)
