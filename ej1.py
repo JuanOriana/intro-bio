@@ -46,19 +46,13 @@ def main():
 
     gbk_filename = sys.argv[1]
 
-    if gbk_filename.split(".")[1] != "gbk" and gbk_filename.split(".")[1] != "gb":
+    if gbk_filename.split(".")[-1] != "gbk" and gbk_filename.split(".")[-1] != "gb":
         print("Wrong format for input file")
         exit(1)
 
-    try:
-        os.mkdir('./FASTA')
-    except FileExistsError:
-        print("./FASTA directory already exists. Skipping...")
-    except OSError as error:
-        print("Error in creating directory : " + str(error))
-
     faa_filename = "./FASTA/" + gbk_filename.split(".")[0].split("/")[-1] + ".fasta"
     print(faa_filename)
+    os.makedirs(os.path.dirname(faa_filename), exist_ok=True)
 
     genbank_records = []
     try:
