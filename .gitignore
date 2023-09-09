@@ -1,4 +1,6 @@
 .venv
+.idea
+.DS_Store
 FASTA
 FASTA/**
 BLAST
