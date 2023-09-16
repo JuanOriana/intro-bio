@@ -5,15 +5,8 @@ import shutil
 
 
 def blast_to_fasta(blast_results, top_n):
-    accession_ids = []
-    for blast_record in blast_results:
-        for alignment in blast_record.alignments:
-            accession_id = alignment.accession
-            accession_ids.append(accession_id)
-            if len(accession_ids) >= top_n:
-                break
-        if len(accession_ids) >= top_n:
-            break
+    accession_ids = [alignment.accession for blast_record in blast_results
+                     for alignment in blast_record.alignments][:top_n]
 
     sequences = []
     try:
@@ -25,7 +18,7 @@ def blast_to_fasta(blast_results, top_n):
     except Exception as e:
         print(f"Failed to download sequences for batch: {str(e)}")
 
-    print(f"Downloaded and saved {len(accession_ids)} sequences.")
+    print(f"Downloaded {len(accession_ids)} sequences.")
     print("-----------------")
     return sequences
 
@@ -58,7 +51,3 @@ def main():
         seq_file.write('\n')
         for sequence in sequences:
             seq_file.write(sequence)
-
-
-if __name__ == '__main__':
-    main()

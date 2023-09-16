@@ -24,7 +24,7 @@ def main():
 
     alignment = AlignIO.read(output_file, "fasta")
     print(alignment)
-    print("-----------------")
+    # print("-----------------")
 
     # for seq in alignment:
     #     print(seq.seq)
