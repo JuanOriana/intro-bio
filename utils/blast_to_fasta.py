@@ -51,3 +51,9 @@ def main():
         seq_file.write('\n')
         for sequence in sequences:
             seq_file.write(sequence)
+
+    print(f"Las secuencias BLAST se han guardado en formato FASTA en {output_filename}")
+
+
+if __name__ == '__main__':
+    main()

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gene=CNGA3-NM_001298
-sequences_amount=10
+sequences_amount=25
 ej3_input=${gene}_BLAST
 
 python ej1.py GenBank/${gene}.gb
