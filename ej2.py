@@ -1,7 +1,10 @@
 import sys
 import os
-from Bio.Blast import NCBIWWW
+from io import StringIO
+
+from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import SeqIO
+from Bio.Blast.Applications import NcbiblastpCommandline
 
 if len(sys.argv) != 2:
     print("Wrong amount of arguments, must be 1")
@@ -29,17 +32,17 @@ for rec in record:
     result_handle.close()
 else:
     save_file.close()
+save_file.close()
 
+# Specify the full file path to the query sequence
+# query_sequence = os.path.abspath(faa_filename)
+# blast_filename = os.path.join("BLAST", os.path.basename(faa_filename).split(".")[0] + ".xml")
 
-
-# if prot_type == 'protein':
-#     blast = NcbiblastpCommandline(db="swissprot", evalue='0.0001', remote=remote)()
-# elif prot_type == 'nucleotide':
-#     blast = NcbiblastnCommandline(db="dbest", evalue='0.0001', remote=remote)()
-# else:
-#   print('Type must be protein or nucleotide')
-#   exit(1)
-# input_handle  = open(faa_filename, "r")
-# output_handle = open(blast_filename, "w")
-
-# # blast_result_record = NCBIXML.read(StringIO(blast))
+# Update the BLAST command with the full file path
+# blast = NcbiblastpCommandline(db="swissprot",  evalue='0.001', outfmt=5, out=blast_filename)()
+# # input_handle  = open(faa_filename, "r")
+# # output_handle = open(blast_filename, "w")
+# # output_handle.write(str(blast))
+# # output_handle.close()
+# # blast_result_record = NCBIXML.read(StringIO(str(blast)))
+# # print(blast_result_record)
