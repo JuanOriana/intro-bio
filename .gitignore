@@ -5,3 +5,5 @@ FASTA
 FASTA/**
 BLAST
 BLAST/**
+output
+output/**
