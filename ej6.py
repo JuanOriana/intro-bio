@@ -14,12 +14,20 @@ def get_ncbi_description(accession: str):
         description = seq_record.description
 
         comments = seq_record.annotations.get("comment", "")
-        summary = ""
 
-        for paragraph in comments.split('.\n'):
-            if paragraph.startswith("Summary:"):
-                summary = paragraph.strip("Summary: ").strip()
-                break
+        found_summary = False
+        summary_lines = []
+
+        for line in comments.splitlines():
+            if found_summary:
+                summary_lines.append(line.strip())
+                if ']' in line:
+                    break
+            elif line.strip().startswith("Summary:"):
+                found_summary = True
+                summary_lines.append(line.strip().lstrip("Summary: "))
+
+        summary = ' '.join(summary_lines)
 
         return description, summary
     except Exception as e:
@@ -51,7 +59,8 @@ def get_proteins_descriptions(df: pd.DataFrame):
             if summary:
                 break
 
-        proteins_info.append({'name': value, 'description': description, 'summary': summary})
+        proteins_info.append(
+            {'name': value, 'description': description, 'summary': summary})
 
     new_df = pd.DataFrame(proteins_info)
 
