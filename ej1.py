@@ -10,17 +10,23 @@ def read_genbank_file(filename):
         return list(records)
 
 
-def translate_mrna_to_aminoacids(to_trans_mrna_sequence, min_seq_len=90, start_codon="ATG"):
+def translate_mrna_to_aminoacids(to_trans_mrna_sequence, min_seq_len=75, start_codon="ATG"):
     translations = []
 
-    for mrna_sequence in to_trans_mrna_sequence, to_trans_mrna_sequence.complement():
+    is_complement = False
+    for mrna_sequence in to_trans_mrna_sequence, to_trans_mrna_sequence.reverse_complement():
         for i in range(len(mrna_sequence) - 2):
             if mrna_sequence[i] + mrna_sequence[i + 1] + mrna_sequence[i + 2] == start_codon:
                 max_seq_length = len(mrna_sequence) - i
                 max_seq_length_rounded = max_seq_length - (max_seq_length % 3)
                 translation = mrna_sequence[i:max_seq_length_rounded + i].translate(to_stop=True)
                 if len(translation) > min_seq_len:
-                    translations.append((len(translation), translation, i))
+                    if is_complement:
+                        translations.append((len(translation), translation, len(mrna_sequence) - (i + 1),
+                                             len(mrna_sequence) - ((i + 1) + len(translation) * 3)))
+                    else:
+                        translations.append((len(translation), translation, (i + 1), (i + 1) + len(translation) * 3))
+        is_complement = True
 
     translations.sort(reverse=True)
     return translations
@@ -70,7 +76,8 @@ def main():
         print(">>> RECORD " + record.id)
         print("-----------------")
         for translation in translations[record.id]:
-            print("sequence: ", translation[1], "length: ", translation[0], " start position: ", translation[2])
+            print("sequence: ", translation[1], "\nlength: ", translation[0], ", start position: ", translation[2],
+                  ", end position: ", translation[3])
             print("-----------------")
 
         try:
