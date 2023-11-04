@@ -12,6 +12,7 @@ def read_genbank_file(filename):
 
 def translate_mrna_to_aminoacids(to_trans_mrna_sequence, min_seq_len=75, start_codon="ATG"):
     translations = []
+    nucleotides = []
 
     is_complement = False
     for mrna_sequence in to_trans_mrna_sequence, to_trans_mrna_sequence.reverse_complement():
@@ -19,17 +20,21 @@ def translate_mrna_to_aminoacids(to_trans_mrna_sequence, min_seq_len=75, start_c
             if mrna_sequence[i] + mrna_sequence[i + 1] + mrna_sequence[i + 2] == start_codon:
                 max_seq_length = len(mrna_sequence) - i
                 max_seq_length_rounded = max_seq_length - (max_seq_length % 3)
-                translation = mrna_sequence[i:max_seq_length_rounded + i].translate(to_stop=True)
+                codon_sequence = mrna_sequence[i:i + max_seq_length_rounded]
+                translation = codon_sequence.translate(to_stop=True)
                 if len(translation) > min_seq_len:
                     if is_complement:
                         translations.append((len(translation), translation, len(mrna_sequence) - (i + 1),
                                              len(mrna_sequence) - ((i + 1) + len(translation) * 3)))
                     else:
                         translations.append((len(translation), translation, (i + 1), (i + 1) + len(translation) * 3))
+                nucleotides.append((len(translation), codon_sequence[: len(translation) * 3 + 3]))
         is_complement = True
 
     translations.sort(reverse=True)
-    return translations
+    nucleotides.sort(reverse=True)
+
+    return translations, nucleotides
 
 
 def write_fasta_file(output_filename, translation, record_data):
@@ -40,9 +45,10 @@ def write_fasta_file(output_filename, translation, record_data):
 
 def translate_genbank_to_fasta(records):
     translations = {}
+    nucleotides = {}
     for record in records:
-        translations[record.id] = translate_mrna_to_aminoacids(record.seq)
-    return translations
+        translations[record.id], nucleotides[record.id] = translate_mrna_to_aminoacids(record.seq)
+    return translations, nucleotides
 
 
 def main():
@@ -57,7 +63,10 @@ def main():
         exit(1)
 
     faa_filename = "./FASTA/" + gbk_filename.split(".")[0].split("/")[-1] + ".fasta"
+    nfaa_filename = "./FASTA/NUCLEOTIDE-" + gbk_filename.split(".")[0].split("/")[-1] + ".fasta"
+
     print(faa_filename)
+    print(nfaa_filename)
     os.makedirs(os.path.dirname(faa_filename), exist_ok=True)
 
     genbank_records = []
@@ -66,7 +75,7 @@ def main():
     except IOError:
         print("Could not open " + gbk_filename)
 
-    translations = translate_genbank_to_fasta(genbank_records)
+    translations, nucleotides = translate_genbank_to_fasta(genbank_records)
 
     for record in genbank_records:
         # TODO: if a .gb file contains many records, make a fasta file for each
@@ -82,6 +91,7 @@ def main():
 
         try:
             write_fasta_file(faa_filename, translations[record.id][0][1], record)
+            write_fasta_file(nfaa_filename, nucleotides[record.id][0][1], record)
         except IOError:
             print("Could not open " + gbk_filename)
 
